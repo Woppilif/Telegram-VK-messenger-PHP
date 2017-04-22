@@ -56,7 +56,7 @@ if (isset($update["message"])) {
 
 
 			
-			$request->sendMessage("Okay. Now you need to Auth in VK. Use this link: https://oauth.vk.com/authorize?client_id=5986851&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=offline,messages&response_type=token&v=5.37 \n And then you have to copy access_token in url then use command /token <access_token>");
+			$request->sendMessage("Okay. Now you need to Auth in VK. Use this link: https://oauth.vk.com/authorize?client_id=SET_YOUR_ID_HERE&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=offline,messages&response_type=token&v=5.37 \n And then you have to copy access_token in url then use command /token <access_token>");
 		break;
 		case '/token':
 			if(!$message->getMessageParam(1)) return $request->sendMessage('Hi! Send me your access_token from URL');
